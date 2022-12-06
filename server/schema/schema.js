@@ -90,3 +90,6 @@ const RootQuery = new GraphQLObjectType({
 module.exports = new GraphQLSchema({
     query: RootQuery
 })
+
+
+// mongodb+srv://Hareesh:<password>@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority
