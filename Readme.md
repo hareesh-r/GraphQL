@@ -1,1 +1,1 @@
-![Alt text](/Screenshot 2023-01-04 at 4.31.29 PM.png "Optional Title")
+![Project Output Screenshot](https://github.com/hareesh-r/GraphQL/blob/main/Screenshot%202023-01-04%20at%204.31.29%20PM.png)
