@@ -2,9 +2,14 @@ const express = require('express');
 
 const { graphqlHTTP } = require("express-graphql");
 
+const cors = require('cors')
+
 const schema = require("./schema/schema")
 
 const app = express();
+
+// allow cross-origin requests
+app.use(cors());
 
 const mongoose = require("mongoose"); 
 
@@ -21,4 +26,4 @@ app.use("/graphql",graphqlHTTP({
 
  app.listen(4000,()=>{
     console.log("Listening to the port 4000!");
- })    
+ })     
