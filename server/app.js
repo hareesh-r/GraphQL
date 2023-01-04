@@ -1,21 +1,29 @@
 const express = require('express');
-const graphqlHTTP = require('express-graphql').graphqlHTTP;
-const schema = require('./schema/schema')
-const mongooes = require('mongoose')
+
+const { graphqlHTTP } = require("express-graphql");
+
+const schema = require("./schema/schema")
 
 const app = express();
 
-mongooes.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority');
+const mongoose = require("mongoose"); 
 
-mongooes.connection.once('open',()=>{
-    console.log("Connected to Database");
+// mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority')
+
+mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/test')
+
+// mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority')
+
+
+mongoose.connection.once('open',()=>{
+    console.log("Connection Succeded!");
 })
 
-app.use('/graphql',graphqlHTTP({
+app.use("/graphql",graphqlHTTP({
     schema,
-    graphiql:true
+    graphiql: true
 }));
 
-app.listen(4000,()=>{
-    console.log("Now listening for requests in port 4000");
-});
+ app.listen(4000,()=>{
+    console.log("Listening to the port 4000!");
+ })    
