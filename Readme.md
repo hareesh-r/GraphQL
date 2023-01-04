@@ -2,7 +2,7 @@
 
 ## Tutorial Followed
 
-### [The Net Ninja]([https://www.youtube.com/watch?v=i_wvap3eiRY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=36])
+[The Net Ninja]([https://www.youtube.com/watch?v=i_wvap3eiRY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=36])
 
 
 - MERN
