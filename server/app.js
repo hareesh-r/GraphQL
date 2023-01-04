@@ -8,12 +8,7 @@ const app = express();
 
 const mongoose = require("mongoose"); 
 
-// mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority')
-
 mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/test')
-
-// mongoose.connect('mongodb+srv://Hareesh:testPass@graphqlpractice.g9713wh.mongodb.net/?retryWrites=true&w=majority')
-
 
 mongoose.connection.once('open',()=>{
     console.log("Connection Succeded!");
