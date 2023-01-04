@@ -10,13 +10,13 @@ function BookDetails(props) {
     if(book){
         return (
             <div>
-                <h2>{book.name}</h2>
-                <p>{book.genre}</p>
-                <p>{book.author.name}</p>
+                <h2><strong>{book.name}</strong></h2>
+                <p>Genre : <strong>{book.genre}</strong></p>
+                <p>A Book by <strong>{book.author.name}</strong></p>
                 <p>All Books by the Author:</p>
                 <ul className="other-books">
                     {book.author.books.map(item => {
-                        return <li key={ item.id }>{item.name}</li>
+                        return <li key={ item.id }><strong>{item.name}</strong></li>
                     })}
                 </ul>
             </div>
