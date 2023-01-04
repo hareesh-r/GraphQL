@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #000;
   font-family: 'Nunito', sans-serif;
 }
 
 #main h1{
-  color: #444;
+  color: #eee;
   text-align: center;
 }
 
@@ -36,8 +36,19 @@ body {
   color: #0e8588;
 }
 
+#book-list li:hover {
+  border-radius: 4px;
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  box-shadow:
+    0 0 4px 3px #fff,
+    0 0 30px 14px #0ff;
+}
+
 form{
-  background: #fff;
+  background: #1e1e1e;
+  color: #eee;
   padding: 20px;
   position: fixed;
   left: 0;
@@ -87,6 +98,14 @@ form button{
   box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
   box-sizing: border-box;
   color: #fff;
+}
+
+form button:hover {
+  border-radius: 50%;
+  background-color: #0e8588;
+  box-shadow:
+    0 0 10px 7px #fff,  /* inner white */
+    0 0 30px 14px #0ff; /* outer cyan */
 }
 
 strong {
